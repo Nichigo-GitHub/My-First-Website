@@ -1,0 +1,484 @@
+<?php
+	// load up global things
+	include_once 'autoloader.php';
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- icon of our page -->
+		<link rel="icon" type="image/png" sizes="32x32" href="css/favicon-32x32.png">
+		
+		<!-- title of our page -->
+		<title>FITchen | Home Page</title>
+		
+		<!-- need this so everything looks good on mobile devices -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<!-- css styles for our Home page-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!-- jquery -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>		
+	</head>
+	<body>
+		<!-- PRE LOADER -->
+		<section class="preloader">
+			<div class="spinner">
+
+				<span class="spinner-rotate"></span>
+				   
+			</div>
+		</section>
+
+		<!-- MENU -->
+		<section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+					</button>
+
+					<!-- lOGO TEXT HERE -->
+					<a href="#home" class="navbar-brand" class="smoothScroll"><span>FIT</span>chen</a>
+				</div>
+
+				<!-- MENU LINKS -->
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-nav-first">
+						<li><a href="#about" class="smoothScroll">About Us</a></li>
+						<li><a href="#team" class="smoothScroll">Meal Plans</a></li>
+						<li><a href="#menu" class="smoothScroll">Menu</a></li>
+						<li><a href="#contact" class="smoothScroll">Contact Us</a></li>
+						<li><a href="#footer" class="smoothScroll">Find Us</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<a href="myaccount.php" class="section-btn">My Account</a>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- HOME -->
+		<section id="home" class="slider" data-stellar-background-ratio="0.5">
+			<div class="row">
+				<div class="owl-carousel owl-theme">
+					<div class="item item-first">
+						<div class="caption">
+							<div class="container">
+								<div class="col-md-8 col-sm-12">
+									<h3>Foods &amp; Services</h3>
+									<h1>Our mission is to provide you with the most suitable meal plan</h1>
+									<a href="#team" class="section-btn btn btn-default smoothScroll">See our Meal Plans</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item item-second">
+						<div class="caption">
+							<div class="container">
+								<div class="col-md-8 col-sm-12">
+									<h3>Health is Wealth</h3>
+									<h1>Check out some of our Healthy Meals in the Menu!</h1>
+									<a href="#menu" class="section-btn btn btn-default smoothScroll">Discover Healthy Meals</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item item-third">
+						<div class="caption">
+							<div class="container">
+								<div class="col-md-8 col-sm-12">
+									<h3>New Recipe every week</h3>
+									<h1>Configure your account to get notified every Sunday</h1>
+									<a href="myaccount.php" class="section-btn btn btn-default smoothScroll">Get Notified!</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ABOUT US -->
+		<section id="about" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<div class="about-info">
+							<div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+								<h4>About us</h4>
+								<h2>We've been Making Tailored Meal Plans Since 2016</h2>
+							</div>
+							<div class="wow fadeInUp" data-wow-delay="0.4s">
+								<p>FITchen is a weekly food subscription service that profiles average people, sports enthusiasts and athletes to provide them a healthy and focused diet specifically tailored to them for it to help them perform better in their work out or sport.</p>
+								<p>We are all about cleaning out poor food choices, and replacing them with the most beneficial foods we can find. As long as people are making the right food choices, then we know they’ll get the results they’re looking for.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-12">
+						<div class="wow fadeInUp about-image" data-wow-delay="0.6s">
+							<img src="assets/about-image.jpg" class="img-responsive" alt="">
+						</div>
+					</div>
+						
+				</div>
+			</div>
+		</section>
+
+		<!-- MEAL PLANS -->
+		<section id="team" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+							<h2>The Meal Plans</h2>
+							<h4>See which one's right for you</h4>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+							<img src="assets/plan-image1.jpg" class="img-responsive" alt="">
+							<div class="team-hover">
+								<div class="team-item">
+									<h4>Just looking for a healthy alternative that you can cook at home? Try our level 1 meal plan</h4> 
+									<ul class="social-icon">
+										<li><a href="#" class="fa fa-facebook-square"></a></li>
+										<li><a href="#" class="fa fa-instagram"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Level 1</h3>
+							<p>Healthy Alternative</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
+							<img src="assets/plan-image2.jpg" class="img-responsive" alt="">
+							<div class="team-hover">
+								<div class="team-item">
+									<h4>Need a controlled diet to go with your workout?<br>Try our level 2 meal plan</h4>
+									<ul class="social-icon">
+										<li><a href="#" class="fa fa-facebook-square"></a></li>
+										<li><a href="#" class="fa fa-instagram"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Level 2</h3>
+							<p>Work-out Focused</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+							<img src="assets/plan-image3.jpeg" class="img-responsive" alt="">
+							<div class="team-hover">
+								<div class="team-item">
+									<h4>Need a specific diet to help you do better in your sport? Try our level 3 meal plan</h4>
+									<ul class="social-icon">
+										<li><a href="#" class="fa fa-facebook-square"></a></li>
+										<li><a href="#" class="fa fa-instagram"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Level 3</h3>
+							<p>Sports Tailored</p>
+						</div>
+					</div>                    
+				</div>
+			</div>
+		</section>
+
+		<!-- MENU-->
+		<section id="menu" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+							<h2>Our Menus</h2>
+							<h4>Tea Time &amp; Dining</h4>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<!-- MENU THUMB -->
+						<div class="menu-thumb">
+							<a href="assets/menu-image1.jpg" class="image-popup" title="American Breakfast">
+								<img src="assets/menu-image1.jpg" class="img-responsive" alt="">
+								<div class="menu-info">
+									<div class="menu-item">
+										<h3>American Breakfast</h3>
+										<p>Tomato / Eggs / Sausage</p>
+									</div>
+									<div class="menu-price">
+										<span>$25</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<!-- MENU THUMB -->
+						<div class="menu-thumb">
+							<a href="assets/menu-image2.jpg" class="image-popup" title="Self-made Salad">
+								<img src="assets/menu-image2.jpg" class="img-responsive" alt="">
+								<div class="menu-info">
+									<div class="menu-item">
+										<h3>Self-made Salad</h3>
+										<p>Green / Fruits / Healthy</p>
+									</div>
+									<div class="menu-price">
+										<span>$18</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<!-- MENU THUMB -->
+						<div class="menu-thumb">
+							<a href="assets/menu-image3.jpg" class="image-popup" title="Chinese Noodle">
+								<img src="assets/menu-image3.jpg" class="img-responsive" alt="">
+								<div class="menu-info">
+									<div class="menu-item">
+										<h3>Chinese Noodle</h3>
+										<p>Pepper / Chicken / Vegetables</p>
+									</div>
+									<div class="menu-price">
+										<span>$34</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<!-- MENU THUMB -->
+						<div class="menu-thumb">
+							<a href="assets/menu-image4.jpg" class="image-popup" title="Rice Soup">
+								<img src="assets/menu-image4.jpg" class="img-responsive" alt="">
+								<div class="menu-info">
+									<div class="menu-item">
+										<h3>Rice Soup</h3>
+										<p>Green / Chicken</p>
+									</div>
+									<div class="menu-price">
+										<span>$28</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<!-- MENU THUMB -->
+						<div class="menu-thumb">
+							<a href="assets/menu-image5.jpg" class="image-popup" title="Project title">
+								<img src="assets/menu-image5.jpg" class="img-responsive" alt="">
+								<div class="menu-info">
+									<div class="menu-item">
+										<h3>Deli Burger</h3>
+										<p>Beef / Fried Potatoes</p>
+									</div>
+									<div class="menu-price">
+										<span>$46</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<!-- MENU THUMB -->
+						<div class="menu-thumb">
+							<a href="assets/menu-image6.jpg" class="image-popup" title="Project title">
+								<img src="assets/menu-image6.jpg" class="img-responsive" alt="">
+								<div class="menu-info">
+									<div class="menu-item">
+										<h3>Big Flat Fried</h3>
+										<p>Pepper / Crispy</p>
+									</div>
+									<div class="menu-price">
+										<span>$30</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- TESTIMONIAL -->
+		<section id="testimonial" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+							<h2>Testimonials</h2>
+						</div>
+					</div>  
+					<div class="col-md-offset-2 col-md-8 col-sm-12">
+						<div class="owl-carousel owl-theme">
+							<div class="item">
+								<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum ullamcorper nulla non.</p>
+								<div class="tst-author">
+									<h4>Digital Carlson</h4>
+									<span>Pharetra quam sit amet</span>
+								</div>
+							</div>
+							<div class="item">
+								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vestibulum orci quam.</p>
+								<div class="tst-author">
+									<h4>Johnny Stephen</h4>
+									<span>Magna nisi porta ligula</span>
+								</div>
+							</div>
+							<div class="item">
+								<p>Vivamus aliquet felis eu diam ultricies congue. Morbi porta lorem nec consectetur porta quis dui elit habitant morbi.</p>
+								<div class="tst-author">
+									<h4>Jessie White</h4>
+									<span>Vitae lacinia augue urna quis</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>  
+
+		<!-- CONTACT US -->
+		<section id="contact" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+				<!-- How to change your own map point
+						1. Go to Google Maps
+						2. Click on your location point
+						3. Click "Share" and choose "Embed map" tab
+						4. Copy only URL and paste it within the src="" field below	-->
+					<div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="0.4s">
+						<div id="google-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.8543225258695!2d121.15354981427575!3d14.203306890498151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd63000286fa21%3A0x18d0e2688547e2d8!2sSM%20City%20Calamba!5e0!3m2!1sen!2sph!4v1612834425451!5m2!1sen!2sph" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						</div>
+					</div>  
+					<div class="col-md-6 col-sm-12">
+						<div class="col-md-12 col-sm-12">
+							<div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+								<h2>Contact Us</h2>
+							</div>
+						</div>
+
+						<!-- CONTACT FORM -->
+						<form action="#" method="post" class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
+
+							<!-- IF MAIL SENT SUCCESSFUL  // connect this with custom JS -->
+							<h6 class="text-success">Your message has been sent successfully.</h6>
+							  
+							<!-- IF MAIL NOT SENT -->
+							<h6 class="text-danger">E-mail must be valid and message must be longer than 1 character.</h6>
+
+							<div class="col-md-6 col-sm-6">
+								<input type="text" class="form-control" id="cf-name" name="name" placeholder="Full name">
+							</div>
+
+							<div class="col-md-6 col-sm-6">
+								<input type="email" class="form-control" id="cf-email" name="email" placeholder="Email address">
+							</div>
+
+							<div class="col-md-12 col-sm-12">
+								<input type="text" class="form-control" id="cf-subject" name="subject" placeholder="Subject">
+
+								<textarea class="form-control" rows="6" id="cf-message" name="message" placeholder="Tell us about what you think"></textarea>
+
+								<button type="submit" class="form-control" id="cf-submit" name="submit">Send Message</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>          
+
+		<!-- FOOTER -->
+		<footer id="footer" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-8">
+						<div class="footer-info">
+							<div class="section-title">
+								<h2 class="wow fadeInUp" data-wow-delay="0.2s">Find us</h2>
+							</div>
+							<address class="wow fadeInUp" data-wow-delay="0.4s">
+								<p>@1st floor SM City Calamba<br>or<br>@2nd floor SM City Santa Rosa<br>Laguna, Calabarzon region</p>
+							</address>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-8">
+						<div class="footer-info">
+							<div class="section-title">
+								<h2 class="wow fadeInUp" data-wow-delay="0.2s">Contact Information</h2>
+							</div>
+							<address class="wow fadeInUp" data-wow-delay="0.4s">
+								<p>090-080-0650 | 090-070-0430</p>
+								<p><a href="mailto:ask@fitchen.com">ask@fitchen.com</a></p>
+								<p>LINE: FITchen </p>
+							</address>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-8">
+						<div class="footer-info footer-open-hour">
+							<div class="section-title">
+								<h2 class="wow fadeInUp" data-wow-delay="0.2s">Operating Hours</h2>
+							</div>
+							<div class="wow fadeInUp" data-wow-delay="0.4s">
+								<div>
+									<strong>Monday to Friday</strong>
+									<p>7:00 AM - 9:00 PM</p>
+								</div>
+								<div>
+									<strong>Saturday - Sunday</strong>
+									<p>10:00 AM - 10:00 PM</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-4">
+						<ul class="wow fadeInUp social-icon" data-wow-delay="0.4s">
+							<li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-instagram"></a></li>
+							<li><a href="#" class="fa fa-google"></a></li>
+						</ul>
+						<div class="wow fadeInUp copyright-text" data-wow-delay="0.8s"> 
+							<p><br>Copyright &copy; 2021 <br>FITchen</p>
+						</div>
+					</div>                    
+				</div>
+			</div>
+		</footer>
+
+		<!-- SCRIPTS -->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.stellar.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/smoothscroll.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+</html>
